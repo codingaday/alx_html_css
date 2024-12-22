@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Basics</title>
+    <link href="base.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      table {
+        width: 30%;
+        border-collapse: collapse; /*To  merge cell borders to avoid double lines */
+        margin: 20px 0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="tweets.html">Tweets</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <article>
+        <p>
+          This is a demonstration of an HTML body structure that includes
+          paragraphs, headings, and a clickable image. HTML is a powerful tool
+          for creating web content.
+        </p>
+
+        <h2>About HTML</h2>
+        <p>
+          HTML stands for HyperText Markup Language. It is used to create the
+          structure of web pages. Using HTML, you can define elements like
+          headings, paragraphs, links, and images.
+        </p>
+
+        <h3>Click the Image Below</h3>
+        <a href="https://www.google.com" target="_blank">
+          <img
+            src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png"
+            alt="ALX Logo"
+            style="width: 200px; height: auto"
+          />
+        </a>
+        <p>
+          Clicking on the image above will take you to Google Where you can
+          explore more about HTML.
+        </p>
+
+        <h2>Why Learn HTML?</h2>
+        <p>
+          Learning HTML is the first step toward becoming a web developer. It
+          forms the foundation of web design and development, enabling you to
+          create and structure web pages effectively.
+        </p>
+
+        <h3>HTML in Action</h3>
+        <p>
+          With HTML, you can create not just static content but also dynamic and
+          interactive elements when combined with other technologies like CSS
+          and JavaScript.
+        </p>
+
+        <h3>See My Tweets</h3>
+        <p>
+          Interested in my latest updates?
+          <a href="tweets.html">tweets!</a>
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>25</td>
+              <td>USA</td>
+            </tr>
+            <tr>
+              <td>Emily</td>
+              <td>28</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Michael</td>
+              <td>32</td>
+              <td>Australia</td>
+            </tr>
+            <tr>
+              <td>Sophia</td>
+              <td>21</td>
+              <td>uk</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <aside><p>placeholder to add comment thread later</p></aside>
+    </main>
+
+    <footer>
+      <p>
+        Made by Abebe Duguma -
+        <a
+          href="https://www.linkedin.com/in/abebe-duguma-6722322a8/"
+          target="_blank"
+          >Linkedin</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
