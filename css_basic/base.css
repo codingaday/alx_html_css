@@ -143,6 +143,7 @@ header {
   font-family: "Yeseva One", sans-serif;
 }
 article {
+  background-color: rgb(244, 244, 244);
 }
 header {
   border-bottom: 1px solid rgb(221, 221, 221);
@@ -160,7 +161,11 @@ aside p {
   color: black;
 }
 footer a {
-  color: rgba(0, 0, 0, 0.8);
+  /* color: rgba(0, 0, 0, 0.8); */
+  color: #fff;
+}
+footer p {
+  color: #fff;
 }
 a {
   color: #f80002;
@@ -193,6 +198,8 @@ header .right {
 header {
   padding: 20px 0;
   height: 80px;
+
+  background-color: #333;
 }
 header ul {
   list-style: none;
@@ -208,6 +215,7 @@ header li:first-child {
 }
 header li a {
   margin: 0 10px;
+  color: #fff;
 }
 header li.logo {
   font-size: 36px;
@@ -228,6 +236,8 @@ aside p {
 footer {
   padding: 5px 15px;
   height: 80px;
+
+  background-color: #333;
 }
 
 /* Text styles and margins */
