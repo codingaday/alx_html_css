@@ -219,7 +219,6 @@ h1 {
 .presenter {
   display: flex;
   flex-direction: row;
-  /* margin-top: 200px; */
   padding: 120px;
   justify-content: center;
   align-items: center;
@@ -254,4 +253,105 @@ h1 {
   font-size: 22px;
   width: 225px;
   font-family: "Source Code Pro", serif;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1228px;
+  height: 600px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.video-section h2 {
+  margin: 25px auto;
+  font-family: "Source Code Pro", serif;
+  font-size: 32px;
+  font-weight: mixed;
+  color: #071629;
+}
+.video-section h2 span {
+  margin: 25px auto;
+  font-family: "Source Code Pro", serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: #c271ff;
+}
+
+.video-lists {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.video-list {
+  width: 255px;
+  height: 335px;
+  position: relative;
+  margin-inline: 20px;
+}
+
+.video-list h3 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #071629;
+  font-family: "Source Code Pro", serif;
+  margin-top: 1rem;
+}
+
+.video-list p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #071629;
+  font-family: "Source Code Pro", serif;
+  margin-top: 1rem;
+  line-height: 24px;
+}
+
+.video-list div:first-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.video-list div:first-of-type img {
+  width: 30px;
+  height: 30px;
+  margin-right: 1.5rem;
+}
+
+.video-list div:first-of-type h4 {
+  font-weight: 500;
+  font-family: "Source Code Pro", serif;
+  color: #c271ff;
+  font-size: 14px;
+}
+
+.video-list > img:first-of-type {
+  width: 100%;
+}
+
+.play-icon {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 77px;
+  left: 127.5px;
+  transform: translate(-50%, -50%);
+}
+.rate-length {
+  margin-top: 1rem;
+}
+.rate-length p {
+  display: inline;
+  margin-left: 6rem;
+  color: #c271ff;
+  font-weight: 500;
+  font-family: "Source Code Pro", serif;
+  font-size: 14px;
 }
