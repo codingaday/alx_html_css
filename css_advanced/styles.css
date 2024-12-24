@@ -154,7 +154,8 @@ h1 {
   margin-inline: 10px;
 }
 
-.hero-section button {
+.hero-section button,
+.membership-section button {
   display: block;
   background-color: #c271ff;
   color: #fff;
@@ -346,6 +347,9 @@ h1 {
 }
 .rate-length {
   margin-top: 1rem;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 0.1px 0.1px 0.1px rgba(0, 0, 0, 0.3);
+  padding-bottom: 8px;
 }
 .rate-length p {
   display: inline;
@@ -354,4 +358,65 @@ h1 {
   font-weight: 500;
   font-family: "Source Code Pro", serif;
   font-size: 14px;
+}
+
+.membership-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1440px;
+  height: 400px;
+  margin: 100px auto;
+  background: #071629;
+  padding-top: 82px;
+  border: 1px solid #979797;
+}
+
+.membership-section h2 {
+  font-family: "Source Code Pro", serif;
+  color: White;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.membership-section h2 span {
+  font-family: "Source Code Pro", serif;
+  color: #c271ff;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto;
+}
+
+.details div {
+  display: inline-block;
+  width: 257px;
+  margin-inline: 2rem;
+  text-align: center;
+}
+
+.details div img {
+  width: 43.7px;
+  height: 35.4;
+  color: #c271ff;
+}
+
+.details div h3 {
+  font-family: "Source Code Pro", serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #fff;
+}
+
+.details div p {
+  font-family: "Source Code Pro", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fff;
 }
