@@ -1,98 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
-/* CSS reset rules */
+/* reset rules */
 
-html,
-body {
-  height: 100%;
-  min-height: 100%;
-}
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
-main > section:first-of-type {
+/* General styles */
+
+body {
+  padding: 2px;
+  font-family: "Source Code Pro", serif;
+  background: #fff;
+}
+
+header,
+main > section:first-of-type,
+.presenter,
+.membership-section,
+footer,
+.footer-contents {
   width: 1440px;
+}
+
+button {
+  display: block;
+  background-color: #c271ff;
+  color: #fff;
+  width: 200px;
+  height: 44px;
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 22px;
+  margin: 40px auto;
+  font: inherit;
+  white-space: nowrap;
+}
+
+/* sections and others */
+main > section:first-of-type {
   height: 1093px;
   padding-top: -1px;
 }
@@ -109,7 +61,6 @@ main > section:first-of-type {
 }
 
 header {
-  width: 1440px;
   height: 29px;
 }
 
@@ -149,8 +100,7 @@ h1 {
   font-size: 120px;
   font-weight: bold;
   margin: 0 auto;
-
-  font-family: "Source Code Pro", serif;
+  color: #fff;
 }
 
 .hero-section {
@@ -163,34 +113,19 @@ h1 {
 .hero-section span {
   font-size: 16px;
   font-weight: bold;
-  font-family: "Source Code Pro", serif;
   margin-inline: 10px;
-}
-
-.hero-section button,
-.membership-section button {
-  display: block;
-  background-color: #c271ff;
-  color: #fff;
-  width: 192px;
-  height: 44px;
-  padding: 13px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
-  border: none;
-  border-radius: 22px;
-  margin: 40px auto;
-  font-family: "Source Code Pro", serif;
 }
 
 .hero-section h2 {
   margin-top: 150px;
   margin-bottom: 70px;
+  font-size: 32px;
+  color: #fff;
 }
 
 .hero-section h2 span {
   color: #c271ff;
+  font-size: 32px;
 }
 
 .pros {
@@ -219,7 +154,7 @@ h1 {
   font-size: 18px;
   margin-top: 15px;
   white-space: nowrap;
-  font-family: "Source Code Pro", serif;
+  color: #fff;
 }
 .pro p {
   font-weight: 400;
@@ -227,19 +162,17 @@ h1 {
   font-style: italic;
   margin-top: 15px;
   letter-spacing: -1px;
-  font-family: "Source Code Pro", serif;
+  color: #fff;
 }
 
 .presenter {
   display: flex;
   flex-direction: row;
-  /* padding: 120px; */
   justify-content: center;
   align-items: center;
   background: #c271ff;
   color: #fff;
   border: 1px solid #979797;
-  width: 1440px;
   height: 392px;
   margin: 0 auto;
 }
@@ -253,22 +186,21 @@ h1 {
   font-size: 22px;
   letter-spacing: 0;
   width: 730px;
-  font-family: "Source Code Pro", serif;
 }
 
 .presenter h3 {
   font-weight: bold;
   font-size: 22px;
   line-height: 33px;
-  font-family: "Source Code Pro", serif;
   width: 172px;
   margin-top: 30px;
+  color: #fff;
 }
 
 .presenter p {
   font-style: italic;
   font-size: 22px;
-  font-family: "Source Code Pro", serif;
+  color: #fff;
 }
 
 .video-section {
@@ -284,14 +216,12 @@ h1 {
 
 .video-section h2 {
   margin: 25px auto;
-  font-family: "Source Code Pro", serif;
   font-size: 32px;
   font-weight: mixed;
   color: #071629;
 }
 .video-section h2 span {
   margin: 25px auto;
-  font-family: "Source Code Pro", serif;
   font-weight: bold;
   font-size: 32px;
   color: #c271ff;
@@ -314,7 +244,6 @@ h1 {
   font-weight: bold;
   font-size: 16px;
   color: #071629;
-  font-family: "Source Code Pro", serif;
   margin-top: 1rem;
 }
 
@@ -322,7 +251,6 @@ h1 {
   font-weight: 400;
   font-size: 14px;
   color: #071629;
-  font-family: "Source Code Pro", serif;
   margin-top: 1rem;
   line-height: 24px;
 }
@@ -343,7 +271,6 @@ h1 {
 
 .video-list div:first-of-type h4 {
   font-weight: 500;
-  font-family: "Source Code Pro", serif;
   color: #c271ff;
   font-size: 14px;
 }
@@ -371,7 +298,6 @@ h1 {
   margin-left: 6rem;
   color: #c271ff;
   font-weight: 500;
-  font-family: "Source Code Pro", serif;
   font-size: 14px;
 }
 
@@ -379,8 +305,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1440px;
-  height: 400px;
+  height: 502px;
   margin: 100px auto;
   background: #071629;
   padding-top: 82px;
@@ -388,14 +313,12 @@ h1 {
 }
 
 .membership-section h2 {
-  font-family: "Source Code Pro", serif;
   color: White;
   font-weight: 400;
   font-size: 32px;
 }
 
 .membership-section h2 span {
-  font-family: "Source Code Pro", serif;
   color: #c271ff;
   font-weight: bold;
   font-size: 32px;
@@ -417,11 +340,9 @@ h1 {
 .details div img {
   width: 43.7px;
   height: 35.4;
-  color: #c271ff;
 }
 
 .details div h3 {
-  font-family: "Source Code Pro", serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
@@ -429,7 +350,6 @@ h1 {
 }
 
 .details div p {
-  font-family: "Source Code Pro", serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -447,7 +367,6 @@ h1 {
 }
 
 .question-answer-section h2 {
-  font-family: "Source Code Pro", serif;
   font-weight: 300;
   font-size: 60px;
   color: #071629;
@@ -455,7 +374,6 @@ h1 {
 
 .question-answer-section h3 {
   margin: 80px 0 30px 0;
-  font-family: "Source Code Pro", serif;
   font-weight: bold;
   font-size: 16px;
   color: #071629;
@@ -472,17 +390,15 @@ h1 {
 }
 
 .answer-text {
-  font-family: "Source Code Pro", serif;
   font-weight: 400;
   font-size: 14px;
   color: #071629;
 }
 
 footer {
-  padding-bottom: 20px;
-  width: 1440px;
   height: 249px;
   margin: 0 auto;
+  background-color: #071629;
 }
 
 footer section {
@@ -490,19 +406,18 @@ footer section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  background: #071629;
   margin-top: 100px;
 }
 
 .footer-contents {
-  width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  padding: 40px 150px 40px 150px;
+  padding: 20px 150px 40px 150px;
+  margin-top: 100px;
+  margin-bottom: 70px;
 }
 
 .fa-brands {
@@ -515,11 +430,11 @@ footer section {
   font-size: 16px;
   background: white;
   color: #071629;
-  padding-top: 13px;
-  padding-left: 12px;
+  padding-top: 8px;
+  padding-left: 7px;
 }
 
 .socials {
-  width: 200px;
+  width: 230px;
   height: 30px;
 }
