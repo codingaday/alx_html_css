@@ -12,7 +12,6 @@
 /* General styles */
 
 body {
-  padding: 2px;
   font-family: "Source Code Pro", serif;
   background: #fff;
 }
@@ -101,6 +100,7 @@ h1 {
   font-weight: bold;
   margin: 0 auto;
   color: #fff;
+  margin-top: 50px;
 }
 
 .hero-section {
@@ -417,7 +417,7 @@ footer section {
   color: #fff;
   padding: 20px 150px 40px 150px;
   margin-top: 100px;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 }
 
 .fa-brands {
