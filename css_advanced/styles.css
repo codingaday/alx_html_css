@@ -91,6 +91,12 @@ video {
   vertical-align: baseline;
 }
 
+main > section:first-of-type {
+  width: 1440px;
+  height: 1093px;
+  padding-top: -1px;
+}
+
 header,
 main > section:first-of-type {
   background-image: url("./images/Object.png");
@@ -99,6 +105,12 @@ main > section:first-of-type {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
+  margin: 0 auto;
+}
+
+header {
+  width: 1440px;
+  height: 29px;
 }
 
 header nav {
@@ -108,7 +120,7 @@ header nav {
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  padding: 40px 100px;
+  padding: 20px 70px;
 }
 
 header nav ul {
@@ -116,7 +128,7 @@ header nav ul {
 }
 nav ul li {
   display: inline-block;
-  margin-inline: 26px;
+  margin-inline: 20px;
 }
 
 ul li a {
@@ -137,6 +149,7 @@ h1 {
   font-size: 120px;
   font-weight: bold;
   margin: 0 auto;
+
   font-family: "Source Code Pro", serif;
 }
 
@@ -220,12 +233,15 @@ h1 {
 .presenter {
   display: flex;
   flex-direction: row;
-  padding: 120px;
+  /* padding: 120px; */
   justify-content: center;
   align-items: center;
   background: #c271ff;
   color: #fff;
   border: 1px solid #979797;
+  width: 1440px;
+  height: 392px;
+  margin: 0 auto;
 }
 
 .presenter div {
@@ -252,7 +268,6 @@ h1 {
 .presenter p {
   font-style: italic;
   font-size: 22px;
-  width: 225px;
   font-family: "Source Code Pro", serif;
 }
 
@@ -364,7 +379,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 1440px; */
+  width: 1440px;
   height: 400px;
   margin: 100px auto;
   background: #071629;
@@ -461,4 +476,50 @@ h1 {
   font-weight: 400;
   font-size: 14px;
   color: #071629;
+}
+
+footer {
+  padding-bottom: 20px;
+  width: 1440px;
+  height: 249px;
+  margin: 0 auto;
+}
+
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #071629;
+  margin-top: 100px;
+}
+
+.footer-contents {
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 40px 150px 40px 150px;
+}
+
+.fa-brands {
+  display: inline-block;
+  margin-inline: 10px;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 16px;
+  background: white;
+  color: #071629;
+  padding-top: 13px;
+  padding-left: 12px;
+}
+
+.socials {
+  width: 200px;
+  height: 30px;
 }
