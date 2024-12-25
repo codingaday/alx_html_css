@@ -52,6 +52,6 @@ Concept and Inspiration: Imagined and designed as a fun project.
 
 ### License
 
-This project is open-source and feel free to use, modify, and distribute.
+This is ALX's project for learning purposes to modify, and distribute.
 
 Happy smiling! 😊
