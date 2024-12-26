@@ -14,6 +14,7 @@
 body {
   font-family: "Source Code Pro", serif;
   background: #fff;
+  padding-bottom: 5px;
 }
 
 header,
@@ -403,8 +404,7 @@ footer {
 
 footer section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   margin-top: 100px;
 }
@@ -437,4 +437,10 @@ footer section {
 .socials {
   width: 230px;
   height: 30px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 14px;
+  margin-top: -55px;
 }
