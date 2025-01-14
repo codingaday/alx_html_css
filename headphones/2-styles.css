@@ -1,4 +1,17 @@
 @font-face {
+  src: url(./fonts/SourceSansPro-Bold.otf);
+  src: url(./fonts/SourceSansPro-Light.otf);
+  src: url(./fonts/SourceSansPro-Regular.otf);
+  src: url(./fonts/SourceSansPro-Semibold.otf);
+  font-family: "source-sans-pro";
+}
+
+@font-face {
+  src: url(./fonts/spincycle_ot.otf);
+  font-family: "spincycle";
+}
+
+@font-face {
   font-family: "holberton_school-icon";
   src: url("fonts/holberton_school-icon.eot?sq4eq4");
   src: url("fonts/holberton_school-icon.eot?sq4eq4#iefix")
@@ -10,19 +23,6 @@
   font-weight: normal;
   font-style: normal;
   font-display: block;
-}
-
-@font-face {
-  src: url(./fonts/SourceSansPro-Bold.otf);
-  src: url(./fonts/SourceSansPro-Light.otf);
-  src: url(./fonts/SourceSansPro-Regular.otf);
-  src: url(./fonts/SourceSansPro-Semibold.otf);
-  font-family: "source-sans-pro";
-}
-
-@font-face {
-  src: url(./fonts/spincycle_ot.otf);
-  font-family: "spincycle";
 }
 
 *,
@@ -59,6 +59,7 @@ textarea {
   --FONT-COLOR: #071629;
   --BGCOLOR: #333;
   --HERO-BG: url("./images/headphones_hero_1.jpg");
+  --RESULTS-BG: url("./images/headphones_hero_2.jpg");
   --HERO-BGCOLOR: #071629;
   --HERO-COLOR: #fff;
   --LINK-ACTIVE: #ff6565;
@@ -84,14 +85,14 @@ textarea {
   --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
 }
 
-.content {
-  width: min(100%, 1000px);
-  margin: 0 auto;
-}
-
 /* UTILITY */
 .nowrap {
   white-space: nowrap;
+}
+
+.content {
+  width: min(100%, 1000px);
+  margin: 0 auto;
 }
 
 .center {
@@ -121,6 +122,8 @@ h3 {
 p {
   line-height: 1.5;
 }
+
+/* LINKS */
 
 a:any-link {
   color: var(--LINK-COLOR);
@@ -235,6 +238,7 @@ a:hover {
   position: relative;
   cursor: pointer;
   margin-left: 2em;
+  padding-left: 1em;
 }
 
 .menu-icon,
@@ -298,9 +302,7 @@ a:hover {
   transform: translateX(-20px) rotate(-45deg);
 }
 
-.menu {
-  padding-left: 1em;
-}
+/* ANIMATION */
 
 @keyframes openMenu {
   0% {
@@ -315,6 +317,8 @@ a:hover {
     transform: scaleY(1);
   }
 }
+
+/* WHAT WE DO SECTION */
 
 .what_we_do {
   display: flex;
@@ -378,7 +382,65 @@ a:hover {
   padding-bottom: 1.5em;
 }
 
-/* MEDIA QUERY */
+.awards img {
+  width: 150px;
+  height: auto;
+}
+.awards .service {
+  position: relative;
+}
+
+.achievements h2 {
+  color: var(--HERO-COLOR);
+  font-family: var(--FF);
+  font-weight: 500;
+  font-size: var(--FSXB);
+}
+
+.achievements p {
+  color: var(--HERO-COLOR);
+  font-family: var(--FF);
+  font-weight: var(--FWR);
+  font-size: var(--FSB);
+}
+.achievements figcaption {
+  color: var(--HERO-COLOR);
+  font-family: var(--FF);
+  font-weight: var(--FWB);
+  font-size: 46px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+.achievements span {
+  color: var(--HERO-COLOR);
+  font-family: var(--FF);
+  font-weight: var(--FWR);
+  font-size: 14px;
+  margin-top: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.achievements {
+  background-image: var(--RESULTS-BG);
+  background-position: center;
+  background-size: cover;
+  min-height: 650px;
+  padding-top: 7em;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.awards {
+  width: min(90vw, 1000px);
+  gap: 3em;
+}
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 480px) {
   .menu-icon {
@@ -424,6 +486,40 @@ a:hover {
   .main__h2 {
     margin-top: 2rem;
   }
+
+  .achievements {
+    padding-top: 7em;
+    margin-top: 25em;
+    padding-bottom: 26em;
+    width: min(100%, 1400px);
+  }
+
+  .achievements p,
+  .achievements h2 {
+    text-align: center;
+  }
+
+  .achievements figcaption {
+    color: var(--HERO-COLOR);
+    font-family: var(--FF);
+    font-weight: var(--FWB);
+    font-size: 46px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-18%, -18%);
+  }
+  .achievements span {
+    color: var(--HERO-COLOR);
+    font-family: var(--FF);
+    font-weight: var(--FWR);
+    font-size: 14px;
+    margin-top: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-27%, -50%);
+  }
 }
 
 @media screen and (min-width: 481px) {
@@ -431,10 +527,12 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     margin-left: -50%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .menu .header__ul li {
-    margin-left: 1.5em;
+    margin-right: 1.5em;
   }
 
   .services {
@@ -451,6 +549,18 @@ a:hover {
 
   .what_we_do {
     margin-top: 4em;
+  }
+
+  .achievements {
+    padding-top: 15em;
+    margin-top: 5em;
+    padding-bottom: 5em;
+    width: min(100%, 1400px);
+  }
+
+  .achievements p,
+  .achievements h2 {
+    text-align: center;
   }
 }
 
