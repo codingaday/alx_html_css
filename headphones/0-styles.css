@@ -310,8 +310,8 @@ a:hover {
   .menu-icon {
     display: block;
     position: absolute;
-    top: 1.5em;
-    left: -65vw;
+    top: 2em;
+    left: -80vw;
   }
   .menu:hover .header__ul {
     display: flex;
