@@ -41,6 +41,7 @@ img {
 
 input,
 button,
+label,
 textarea {
   font: inherit;
 }
@@ -218,6 +219,8 @@ a:hover {
   text-transform: uppercase;
   cursor: pointer;
   border: none;
+  font-family: var(--FF);
+  width: 162px;
 }
 
 .bottom-margin {
@@ -383,7 +386,6 @@ a:hover {
 }
 
 /* OUR RESULTS SECTION */
-
 .awards img {
   width: 150px;
   height: auto;
@@ -440,6 +442,52 @@ a:hover {
 .awards {
   width: min(90vw, 1000px);
   gap: 3em;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  width: min(100%, 300px);
+  padding: 1rem;
+}
+
+.contact h2 {
+  font-size: var(--FSXB);
+  font-weight: 500;
+  font-family: var(--FF);
+  margin: 3rem 0 3.3rem 2rem;
+}
+
+label {
+  font-family: var(--FF);
+  font-weight: 500;
+  font-size: var(--FSM);
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid var(--BORDER-COLOR);
+  font-size: 16px;
+}
+
+textarea {
+  margin-bottom: 2rem;
+}
+
+.contact button {
+  margin-left: 2rem;
 }
 
 /* MEDIA QUERIES */
@@ -522,6 +570,15 @@ a:hover {
     left: 50%;
     transform: translate(-27%, -50%);
   }
+}
+
+.contact {
+  width: 335px;
+  height: 373px;
+  margin: 2rem auto;
+  display: flex;
+  flex-flow: column;
+  align-items: space-between;
 }
 
 @media screen and (min-width: 481px) {
