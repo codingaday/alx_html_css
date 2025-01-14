@@ -1,17 +1,4 @@
 @font-face {
-  src: url(./fonts/SourceSansPro-Bold.otf);
-  src: url(./fonts/SourceSansPro-Light.otf);
-  src: url(./fonts/SourceSansPro-Regular.otf);
-  src: url(./fonts/SourceSansPro-Semibold.otf);
-  font-family: "source-sans-pro";
-}
-
-@font-face {
-  src: url(./fonts/spincycle_ot.otf);
-  font-family: "spincycle";
-}
-
-@font-face {
   font-family: "holberton_school-icon";
   src: url("fonts/holberton_school-icon.eot?sq4eq4");
   src: url("fonts/holberton_school-icon.eot?sq4eq4#iefix")
@@ -23,6 +10,19 @@
   font-weight: normal;
   font-style: normal;
   font-display: block;
+}
+
+@font-face {
+  src: url(./fonts/SourceSansPro-Bold.otf);
+  src: url(./fonts/SourceSansPro-Light.otf);
+  src: url(./fonts/SourceSansPro-Regular.otf);
+  src: url(./fonts/SourceSansPro-Semibold.otf);
+  font-family: "source-sans-pro";
+}
+
+@font-face {
+  src: url(./fonts/spincycle_ot.otf);
+  font-family: "spincycle";
 }
 
 *,
@@ -84,14 +84,14 @@ textarea {
   --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
 }
 
-/* UTILITY */
-.nowrap {
-  white-space: nowrap;
-}
-
 .content {
   width: min(100%, 1000px);
   margin: 0 auto;
+}
+
+/* UTILITY */
+.nowrap {
+  white-space: nowrap;
 }
 
 .center {
@@ -121,8 +121,6 @@ h3 {
 p {
   line-height: 1.5;
 }
-
-/* LINKS */
 
 a:any-link {
   color: var(--LINK-COLOR);
@@ -237,7 +235,6 @@ a:hover {
   position: relative;
   cursor: pointer;
   margin-left: 2em;
-  padding-left: 1em;
 }
 
 .menu-icon,
@@ -301,7 +298,9 @@ a:hover {
   transform: translateX(-20px) rotate(-45deg);
 }
 
-/* ANIMATION */
+.menu {
+  padding-left: 1em;
+}
 
 @keyframes openMenu {
   0% {
@@ -316,8 +315,6 @@ a:hover {
     transform: scaleY(1);
   }
 }
-
-/* WHAT WE DO SECTION */
 
 .what_we_do {
   display: flex;
@@ -381,7 +378,7 @@ a:hover {
   padding-bottom: 1.5em;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUERY */
 
 @media screen and (max-width: 480px) {
   .menu-icon {

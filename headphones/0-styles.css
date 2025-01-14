@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap");
+/* EXTERNAL FONTS */
 
 @font-face {
   src: url(./fonts/SourceSansPro-Bold.otf);
@@ -12,6 +12,8 @@
   src: url(./fonts/spincycle_ot.otf);
   font-family: "spincycle";
 }
+
+/* RESET */
 
 *,
 *::before,
@@ -72,14 +74,14 @@ textarea {
   --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
 }
 
-.content {
-  width: min(100%, 1000px);
-  margin: 0 auto;
-}
-
 /* UTILITY */
 .nowrap {
   white-space: nowrap;
+}
+
+.content {
+  width: min(100%, 1000px);
+  margin: 0 auto;
 }
 
 .center {
@@ -96,8 +98,8 @@ body {
   background-color: var(--BODY-BGCOLOR);
   color: var(--FONT-COLOR);
   min-height: 100vh;
-
-  width: 1400px;
+  width: min(100%, 1400px);
+  margin: 0 auto;
 }
 
 h2,
@@ -109,6 +111,8 @@ h3 {
 p {
   line-height: 1.5;
 }
+
+/* LIKNKS */
 
 a:any-link {
   color: var(--LINK-COLOR);
@@ -223,6 +227,7 @@ a:hover {
   position: relative;
   cursor: pointer;
   margin-left: 2em;
+  padding-left: 1em;
 }
 
 .menu-icon,
@@ -286,9 +291,7 @@ a:hover {
   transform: translateX(-20px) rotate(-45deg);
 }
 
-.menu {
-  padding-left: 1em;
-}
+/* ANIMATIONS */
 
 @keyframes openMenu {
   0% {
@@ -349,5 +352,17 @@ a:hover {
 
   .main__h2 {
     margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .menu .header__ul {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -50%;
+  }
+
+  .menu .header__ul li {
+    margin-left: 1.5em;
   }
 }
