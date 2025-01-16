@@ -111,6 +111,7 @@ body {
   min-height: 100vh;
   width: min(100%, 1400px);
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 h2,
@@ -566,7 +567,7 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   .services {
     display: flex;
     flex-flow: row nowrap;
